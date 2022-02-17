@@ -1,5 +1,5 @@
-﻿@model Suniukai_MVC_Paskaita.Models.Suniukas
-<link rel="stylesheet" href="~/css/suniukas.css" asp-append-version="true" />
+﻿@model Suniukai_MVC_Paskaita.Models.Kaciukas
+
 @{
     ViewData["Title"] = "Details";
 }
@@ -7,9 +7,8 @@
 <h1>Details</h1>
 
 <div>
-    <h4>Suniukas</h4>
+    <h4>Kaciukas</h4>
     <hr />
-    <img class="nuotrauka" src="@Model.Nuotrauka"/>
     <dl class="row">
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.Vardas)

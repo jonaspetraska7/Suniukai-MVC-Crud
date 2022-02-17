@@ -11,22 +11,22 @@ using Suniukai_MVC_Paskaita.Models;
 
 namespace Suniukai_MVC_Paskaita.Controllers
 {
-    public class SuniukasController : Controller
+    public class KaciukasController : Controller
     {
         private readonly SuniukaiDbContext _context;
 
-        public SuniukasController(SuniukaiDbContext context)
+        public KaciukasController(SuniukaiDbContext context)
         {
             _context = context;
         }
 
-        // GET: Suniukas
+        // GET: Kaciukas
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Suniukai.ToListAsync());
+            return View(await _context.Kaciukai.ToListAsync());
         }
 
-        // GET: Suniukas/Details/5
+        // GET: Kaciukas/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -34,44 +34,39 @@ namespace Suniukai_MVC_Paskaita.Controllers
                 return NotFound();
             }
 
-            var suniukas = await _context.Suniukai
+            var kaciukas = await _context.Kaciukai
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (suniukas == null)
+            if (kaciukas == null)
             {
                 return NotFound();
             }
 
-            return View(suniukas);
+            return View(kaciukas);
         }
 
-        // GET: Suniukas/Create
+        // GET: Kaciukas/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        public async Task<IActionResult> Galerija()
-        {
-            return View(await _context.Suniukai.ToListAsync());
-        }
-
-        // POST: Suniukas/Create
+        // POST: Kaciukas/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Vardas,Nuotrauka,Aprasymas")] Suniukas suniukas)
+        public async Task<IActionResult> Create([Bind("Id,Vardas,Nuotrauka,Aprasymas")] Kaciukas kaciukas)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(suniukas);
+                _context.Add(kaciukas);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(suniukas);
+            return View(kaciukas);
         }
 
-        // GET: Suniukas/Edit/5
+        // GET: Kaciukas/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,22 +74,22 @@ namespace Suniukai_MVC_Paskaita.Controllers
                 return NotFound();
             }
 
-            var suniukas = await _context.Suniukai.FindAsync(id);
-            if (suniukas == null)
+            var kaciukas = await _context.Kaciukai.FindAsync(id);
+            if (kaciukas == null)
             {
                 return NotFound();
             }
-            return View(suniukas);
+            return View(kaciukas);
         }
 
-        // POST: Suniukas/Edit/5
+        // POST: Kaciukas/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,Vardas,Nuotrauka,Aprasymas")] Suniukas suniukas)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,Vardas,Nuotrauka,Aprasymas")] Kaciukas kaciukas)
         {
-            if (id != suniukas.Id)
+            if (id != kaciukas.Id)
             {
                 return NotFound();
             }
@@ -103,12 +98,12 @@ namespace Suniukai_MVC_Paskaita.Controllers
             {
                 try
                 {
-                    _context.Update(suniukas);
+                    _context.Update(kaciukas);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!SuniukasExists(suniukas.Id))
+                    if (!KaciukasExists(kaciukas.Id))
                     {
                         return NotFound();
                     }
@@ -119,10 +114,10 @@ namespace Suniukai_MVC_Paskaita.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(suniukas);
+            return View(kaciukas);
         }
 
-        // GET: Suniukas/Delete/5
+        // GET: Kaciukas/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,30 +125,30 @@ namespace Suniukai_MVC_Paskaita.Controllers
                 return NotFound();
             }
 
-            var suniukas = await _context.Suniukai
+            var kaciukas = await _context.Kaciukai
                 .FirstOrDefaultAsync(m => m.Id == id);
-            if (suniukas == null)
+            if (kaciukas == null)
             {
                 return NotFound();
             }
 
-            return View(suniukas);
+            return View(kaciukas);
         }
 
-        // POST: Suniukas/Delete/5
+        // POST: Kaciukas/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var suniukas = await _context.Suniukai.FindAsync(id);
-            _context.Suniukai.Remove(suniukas);
+            var kaciukas = await _context.Kaciukai.FindAsync(id);
+            _context.Kaciukai.Remove(kaciukas);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool SuniukasExists(int id)
+        private bool KaciukasExists(int id)
         {
-            return _context.Suniukai.Any(e => e.Id == id);
+            return _context.Kaciukai.Any(e => e.Id == id);
         }
     }
 }

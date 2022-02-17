@@ -1,0 +1,11 @@
+﻿@model IEnumerable<Suniukai_MVC_Paskaita.Models.Suniukas>
+
+@{
+    ViewData["Title"] = "Galerija";
+}
+
+<h1>Galerija</h1>
+
+@foreach(var x in Model){
+    <img style="width: 300px" src="@x.Nuotrauka"/>
+}

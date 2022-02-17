@@ -23,6 +23,26 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Kaciukas/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FjaXVrYXNcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Kaciukas/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FjaXVrYXNcRGVsZXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Kaciukas/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FjaXVrYXNcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Kaciukas/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FjaXVrYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Kaciukas/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcS2FjaXVrYXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -45,6 +65,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Suniukas/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VuaXVrYXNcRWRpdC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Suniukas/Galerija.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VuaXVrYXNcR2FsZXJpamEuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Jonas/source/repos/Suniukai MVC Paskaita/Suniukai MVC Paskaita/Views/Suniukas/Index.cshtml]

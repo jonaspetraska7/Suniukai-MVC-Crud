@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "IpBrTyX6YpUub4E0i0XEmJeBdjh1DpX/c8t3s853hng=",
+  "Hash": "3fUVkZTEe0RzWQFE4AeTe2ga9lGhi0cGjcrvgmD8DLo=",
   "Source": "Suniukai MVC Paskaita",
   "BasePath": "_content/Suniukai MVC Paskaita",
   "Mode": "Default",
@@ -66,6 +66,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\site.css"
+    },
+    {
+      "Identity": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\wwwroot\\css\\suniukas.css",
+      "SourceId": "Suniukai MVC Paskaita",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\wwwroot\\",
+      "BasePath": "_content/Suniukai MVC Paskaita",
+      "RelativePath": "css/suniukas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\suniukas.css"
     },
     {
       "Identity": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\wwwroot\\favicon.ico",

@@ -8,5 +8,7 @@ namespace Suniukai_MVC_Paskaita.Data
         public SuniukaiDbContext(DbContextOptions<SuniukaiDbContext> options) : base(options) { }
 
         public DbSet<Suniukas> Suniukai { get; set; }
+
+        public DbSet<Kaciukas> Kaciukai { get; set; }
     }
 }
