@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj": {}
+    "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj": {
+    "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj",
+        "projectUniqueName": "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj",
         "projectName": "Suniukai MVC Paskaita",
-        "projectPath": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj",
+        "projectPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj",
         "packagesPath": "C:\\Users\\Jonas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Jonas\\source\\repos\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita\\obj\\",
+        "outputPath": "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -43,6 +43,14 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
+            "Microsoft.AspNetCore.Identity.UI": {
+              "target": "Package",
+              "version": "[6.0.2, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[6.0.2, )"

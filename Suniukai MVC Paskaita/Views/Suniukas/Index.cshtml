@@ -1,8 +1,10 @@
-﻿@model IEnumerable<Suniukai_MVC_Paskaita.Models.Suniukas>
+﻿@using Microsoft.AspNetCore.Identity
+@model IEnumerable<Suniukai_MVC_Paskaita.Models.Suniukas>
 
 @{
     ViewData["Title"] = "Index";
 }
+@inject SignInManager<IdentityUser> SignInManager
 
 <h1>Index</h1>
 
@@ -40,9 +42,13 @@
                 @Html.DisplayFor(modelItem => item.Aprasymas)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                @if (SignInManager.IsSignedIn(User))
+                {
+                    <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> 
+                    <a asp-action="Details" asp-route-id="@item.Id">Details</a>
+                    <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                }
+
             </td>
         </tr>
 }
