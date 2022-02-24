@@ -1,10 +1,11 @@
 ﻿@using Microsoft.AspNetCore.Identity
+@using Suniukai_MVC_Paskaita.Areas.Identity.Data
 @model IEnumerable<Suniukai_MVC_Paskaita.Models.Suniukas>
 
 @{
     ViewData["Title"] = "Index";
 }
-@inject SignInManager<IdentityUser> SignInManager
+@inject SignInManager<Vartotojas> SignInManager
 
 <h1>Index</h1>
 

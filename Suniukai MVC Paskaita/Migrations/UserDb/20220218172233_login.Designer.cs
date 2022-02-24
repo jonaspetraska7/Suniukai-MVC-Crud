@@ -11,7 +11,7 @@ using Suniukai_MVC_Paskaita.Data;
 
 namespace Suniukai_MVC_Paskaita.Migrations.UserDb
 {
-    [DbContext(typeof(UserDbContext))]
+    //[DbContext(typeof(UserDbContext))]
     [Migration("20220218172233_login")]
     partial class login
     {

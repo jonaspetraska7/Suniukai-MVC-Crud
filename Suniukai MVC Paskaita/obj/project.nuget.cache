@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "TayF/LQw+qr+kEdrfhNEDmTAKHbdmWg0cz8elKZYAUhFKNkgblnfuvwVi+rgR3fTMEkkRpKvPw1qc4+jW0avFw==",
+  "dgSpecHash": "lYDugH2gr9hxWxGkzgvFV/iAMDsx6BrTyMGyZnoR1GQ1Yx31YJ8zFTefyHQ/TCdYgo8u279nPkyRkueKqayorA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Jonas\\Documents\\GitHub\\Suniukai-MVC-Crud\\Suniukai MVC Paskaita\\Suniukai MVC Paskaita.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Jonas\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\Jonas\\.nuget\\packages\\identitymodel\\6.0.0\\identitymodel.6.0.0.nupkg.sha512",
     "C:\\Users\\Jonas\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\Jonas\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\Jonas\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",

@@ -4,9 +4,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
+using Suniukai_MVC_Paskaita.Areas.Identity.Data;
 using Suniukai_MVC_Paskaita.Data;
 using Suniukai_MVC_Paskaita.Models;
 
@@ -15,16 +17,20 @@ namespace Suniukai_MVC_Paskaita.Controllers
     public class KaciukasController : Controller
     {
         private readonly SuniukaiDbContext _context;
+        private readonly UserManager<Vartotojas> _userManager;
 
-        public KaciukasController(SuniukaiDbContext context)
+        public KaciukasController(SuniukaiDbContext context, UserManager<Vartotojas> userManager)
         {
             _context = context;
+            _userManager = userManager;
         }
 
         // GET: Kaciukas
         [Authorize]
         public async Task<IActionResult> Index()
         {
+            var vartotojas = await _userManager.GetUserAsync(User);
+            var augintinis = vartotojas.TurimasAugintinis;
             return View(await _context.Kaciukai.ToListAsync());
         }
 

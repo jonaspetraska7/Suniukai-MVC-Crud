@@ -1,16 +1,30 @@
 using Microsoft.EntityFrameworkCore;
 using Suniukai_MVC_Paskaita.Data;
 using Microsoft.AspNetCore.Identity;
+using Suniukai_MVC_Paskaita.Areas.Identity.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<SuniukaiDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("SuniukaiDbContext")));
-builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
-    .AddEntityFrameworkStores<UserDbContext>();
+builder.Services.AddIdentity<Vartotojas, IdentityRole>()
+    .AddEntityFrameworkStores<UserDbContext>()
+    .AddDefaultTokenProviders().AddDefaultUI();
+
+builder.Services.AddScoped<IUserClaimsPrincipalFactory<Vartotojas>,
+    AdditionalUserClaimsPrincipalFactory>();
+
 builder.Services.AddDbContext<UserDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("UserDbContextConnection")));
+
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("AdminOnly", policy => policy.RequireClaim("role", "admin"));
+});
+
+builder.Services.AddRazorPages();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

@@ -1,10 +1,11 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Suniukai_MVC_Paskaita.Areas.Identity.Data;
 
 namespace Suniukai_MVC_Paskaita.Data;
 
-public class UserDbContext : IdentityDbContext<IdentityUser>
+public class UserDbContext : IdentityDbContext<Vartotojas>
 {
     public UserDbContext(DbContextOptions<UserDbContext> options)
         : base(options)

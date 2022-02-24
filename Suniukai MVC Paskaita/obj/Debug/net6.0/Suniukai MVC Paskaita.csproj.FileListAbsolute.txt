@@ -532,3 +532,4 @@ C:\Users\Jonas\Documents\GitHub\Suniukai-MVC-Crud\Suniukai MVC Paskaita\bin\Debu
 C:\Users\Jonas\Documents\GitHub\Suniukai-MVC-Crud\Suniukai MVC Paskaita\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
 C:\Users\Jonas\Documents\GitHub\Suniukai-MVC-Crud\Suniukai MVC Paskaita\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\Jonas\Documents\GitHub\Suniukai-MVC-Crud\Suniukai MVC Paskaita\obj\Debug\net6.0\Suniukai MVC Paskaita.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Jonas\Documents\GitHub\Suniukai-MVC-Crud\Suniukai MVC Paskaita\bin\Debug\net6.0\IdentityModel.dll

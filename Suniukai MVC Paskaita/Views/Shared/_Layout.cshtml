@@ -1,4 +1,11 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using Suniukai_MVC_Paskaita.Areas.Identity.Data
+@inject IAuthorizationService AuthorizationService
+@inject UserManager<Vartotojas> userManager
+@inject SignInManager<Vartotojas> signInManager
+
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8" />
@@ -28,6 +35,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Kaciukas" asp-action="Index">Kaciukai</a>
                         </li>
+                        @if ((await AuthorizationService.AuthorizeAsync(User, "AdminOnly")).Succeeded)
+                        {
+                            <li class="nav-item">
+                                <h1>Esu Administratorius :)</h1>
+                            </li>                            
+                        }
+                        @if (signInManager.IsSignedIn(User))
+                        {
+                            <li class="nav-item">
+                                <h1>Augintinis : @((await userManager.GetUserAsync(User)).TurimasAugintinis)</h1>
+                            </li>                            
+                        }
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>
